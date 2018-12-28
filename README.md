@@ -1,7 +1,4 @@
-![logo](./docs/design_assets/logo.png)
-
-
-# ReForum
+# sunyForum
 A minimal forum application built with the following technologies:
 * [React](https://facebook.github.io/react/)
 * [Redux](http://redux.js.org/)
@@ -9,8 +6,6 @@ A minimal forum application built with the following technologies:
 * [ExpressJS](https://expressjs.com/)
 * [PassportJS](http://passportjs.org/)
 * [MongoDB](https://www.mongodb.com/)
-
-Demo app is deployed on Heroku. Please check it out: https://reforum-app.herokuapp.com/
 
 ### Application Features
 * Users can post a discussion
@@ -24,12 +19,6 @@ Demo app is deployed on Heroku. Please check it out: https://reforum-app.herokua
 * [API Docs](https://github.com/shoumma/ReForum/blob/master/docs/api.md)
 * [System Overview](https://github.com/shoumma/ReForum/blob/master/docs/system_overview.md)
 
-### Home View
-![home view](./docs/design_assets/home_view.jpg)
-
-### Admin View
-![admin view](./docs/design_assets/admin_view.jpg)
-
 ## Deploy on you own server
 
 Please make sure you have following software installed in your system:
@@ -40,7 +29,7 @@ Please make sure you have following software installed in your system:
 
 First we need to clone the repository:
 ```
-$ git clone https://github.com/shoumma/ReForum
+$ git clone https://github.com/wulichenyang/suny-forum-backend
 ```
 
 Then we have to install the necessary dependencies using either NPM or Yarn:
@@ -73,7 +62,7 @@ module.exports = {
 
 We need to provide all the information here. You can notice that we need the database url here too. My `local` MongoDB url looks like:
 ```
-mongodb://localhost:27017/reforum
+mongodb://localhost:27017/sunyForum
 ```
 
 Now we are ready to run the application. You can run either run the development environment of the application which will include Hot-Reload for JS codes using Webpack and the Redux dev tool extension, or you can run the production edition. The default port for developer edition is `8080`, and for production is `process.env.PORT`.
@@ -100,11 +89,3 @@ Congratulation! You now have a clone of this application in your server. :-)
 * Ability to change the name and logo of the site from admin panel.
 * Make the installation process more interactive
 * Add multiple theme support.
-
-## License
-[MIT License](https://github.com/shoumma/Mister-Poster/blob/master/LICENSE). Do whatever you want to do. :-)
-
-## Conclusion
-The application is created with lots of ♥. Any pull request, issues and contribution is very appreciated. It would be really great if we can take this application to the next level, where it can be used as a platform for forums.
-
-[Provash Shoumma](https://twitter.com/pshoumma)
